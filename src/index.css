@@ -1,0 +1,51 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for markdown content */
+.markdown-body h1 {
+  @apply text-2xl font-bold mb-4;
+}
+
+.markdown-body h2 {
+  @apply text-xl font-bold mb-3;
+}
+
+.markdown-body h3 {
+  @apply text-lg font-bold mb-2;
+}
+
+.markdown-body p {
+  @apply mb-4;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  @apply mb-4 pl-5;
+}
+
+.markdown-body li {
+  @apply mb-2;
+}
+
+.markdown-body a {
+  @apply text-blue-500 hover:underline;
+}
+
+/* Ensure scrollbars are visible when content overflows */
+textarea,
+.markdown-body {
+  scrollbar-width: thin;
+}
+
+textarea::-webkit-scrollbar,
+.markdown-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb,
+.markdown-body::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0;
+  border-radius: 4px;
+}
